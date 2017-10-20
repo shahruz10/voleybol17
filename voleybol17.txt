@@ -1,0 +1,13 @@
+float x,y,r; 
+float inc = TWO_PI/25.0; 
+void setup(){ 
+size(1500,1000); 
+r=300; 
+} 
+void draw() { 
+background(255,0,0); 
+inc=inc+1; 
+x=500+round(r*cos(PI*inc/180)); 
+y=500+round(r*sin(PI*inc/180)); 
+ellipse(x,y,50,50); 
+}
